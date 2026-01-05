@@ -36,6 +36,5 @@ UPDATE Medicos
 SET Nome = "Dr. Mariana Silva"
 WHERE Id_medico = 4;
 
-USE Hospital;
 DELETE FROM Pacientes
 WHERE Id_paciente = 1
