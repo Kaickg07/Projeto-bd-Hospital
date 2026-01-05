@@ -31,3 +31,11 @@ VALUES
 (2, 1, '2024-01-15', 'Acompanhamento pediátrico'),
 (4, 4, '2024-01-18', 'Exames preventivos'),
 (5, 2, '2024-01-20', 'Dor no joelho após exercício');
+
+UPDATE Medicos
+SET Nome = "Dr. Mariana Silva"
+WHERE Id_medico = 4;
+
+UPDATE Medicos
+SET Nome = "Dr. Mariana Silva"
+WHERE Id_medico = 4;
