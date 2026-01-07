@@ -1,4 +1,3 @@
-
 use hospital;
 
 INSERT INTO Especialidades(Nome)
