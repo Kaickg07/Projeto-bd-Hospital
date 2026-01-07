@@ -1,3 +1,4 @@
+
 use hospital;
 
 INSERT INTO Especialidades(Nome)
@@ -37,7 +38,17 @@ SET Nome = "Dr. Mariana Silva"
 WHERE Id_medico = 4;
 
 DELETE FROM Consultas
-WHERE Id_paciente = 1
+WHERE Id_paciente = 1;
 
 DELETE FROM Pacientes
-WHERE Id_paciente = 1
+WHERE Id_paciente = 1;
+
+DESCRIBE Especialidades;
+
+SELECT M.Nome, E.Nome AS 'Especialidade', M.Telefone
+FROM Medicos M INNER JOIN Especialidades E
+ON M.Id_especialidade = E.Id_especialidade;
+
+SELECT P.Nome AS 'Paciente', M.Nome AS 'Médico', C.Data_consulta AS 'Data da Consulta', C.Observacoes AS 'Observações'
+FROM Pacientes P, Medicos M, Consultas C
+WHERE P.Id_paciente = C.Id_paciente AND M.Id_medico = C.Id_medico;
